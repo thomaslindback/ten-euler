@@ -1,3 +1,5 @@
+// Project euler 1
+
 fn e1(n: int) -> int {
 	match n {
 		0 => 0,

@@ -1,3 +1,5 @@
+// Project euler 1
+
 package org.teel
 
 object E1 {

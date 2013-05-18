@@ -1,5 +1,5 @@
-// You can edit this code!
-// Click here and start typing.
+// Project euler 1
+
 package main
 
 import "fmt"
@@ -11,5 +11,5 @@ func main() {
 			sum += i
 		}	
 	}
-	fmt.Println(sum == 233168)
+	fmt.Println(sum)
 }

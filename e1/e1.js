@@ -1,5 +1,4 @@
-
-console.log("euler 1");
+// Project euler 1
 
 e1 = function() {
 	var sum = 0;
@@ -11,4 +10,4 @@ e1 = function() {
 	return sum
 }
 
-console.log(e1() == 233168);
+console.log(e1());
