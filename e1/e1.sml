@@ -1,4 +1,17 @@
-(* euler 1 *)
+(* Project euler 1 *)
 
-fun length nil = 0
-  | length (_::t) = 1 + length t
+fun e1_1 n = 
+    case n of
+	0 => 0
+      | n  => if n mod 3 = 0 orelse n mod 5 = 0 then
+		  n + e1_1(n-1)
+	      else
+		  e1_1(n-1);
+e1_1 999;
+
+fun e1_2 0 = 0
+  | e1_2 n = if n mod 3 = 0 orelse n mod 5 = 0 then
+		 n + e1_2(n-1)
+	     else
+		 e1_2(n-1);
+e1_2 999

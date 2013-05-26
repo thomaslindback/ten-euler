@@ -9,6 +9,11 @@ object E1 {
     case _ => e1_match(n - 1, if (n % 5 == 0 || n % 3 == 0) acc + n else acc)
   }
 
+  def e1_r(n: Int): Int = n match {
+    case 0 => 0
+    case _ => (if (n % 5 == 0 || n % 3 == 0) n else 0) + e1_r(n-1)
+  }
+
   def e1_explicit(n: Int): Int = {
     var sum = 0
     for (i <- 0 until n) {
