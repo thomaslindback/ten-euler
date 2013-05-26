@@ -1,4 +1,4 @@
-// Project euler 1
+// Project Euler 1
 
 e1 = function() {
 	var sum = 0;

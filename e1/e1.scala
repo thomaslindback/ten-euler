@@ -1,4 +1,4 @@
-// Project euler 1
+// Project Euler 1
 
 package org.teel
 

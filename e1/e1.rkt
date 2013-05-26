@@ -1,4 +1,4 @@
-#! Project euler 1
+#! Project Euler 1
 
 (define (e1)
    (define (inner1 x acc) 

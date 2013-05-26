@@ -1,4 +1,4 @@
-# Project euler 1
+# Project Euler 1
 
 # v1
 class E1

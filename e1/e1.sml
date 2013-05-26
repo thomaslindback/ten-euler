@@ -1,4 +1,4 @@
-(* Project euler 1 *)
+(* Project Euler 1 *)
 
 fun e1_1 n = 
     case n of
