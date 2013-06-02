@@ -1,4 +1,5 @@
-# euler9
+# Project Euler 9
+
 from operator import mul
 
 t = [8, 15, 17]

@@ -7,13 +7,16 @@
 (define (palindrome? s)
   (string=? s (list->string (reverse (string->list s)))))
 
-(palindrome? (~a 123321))
+(define (make-list from to)
+  (build-list (+ 1 (- to from)) (lambda (x) (+ x from))))
 
-(define (e4 low high)
-  (define (inner pal-list low high cnt)
-    (+ low high))
-  (inner null low high low))
-    
-; (begin (display (string-append (~a low) "\n")) low))
+(define (filter-palindromes from to)
+  (let ([ll (map (lambda (x) (* from x)) (make-list from to))])
+    (filter (lambda (x) (palindrome? (~a x))) ll)))
 
-(e4 10 15)
+(define (e4 from to) 
+  (if (> from to)
+      null
+      (cons (filter-palindromes from to) (e4 (+ 1 from) to))))
+
+(car (sort (flatten(e4 100 999)) >))

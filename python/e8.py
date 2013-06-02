@@ -1,4 +1,5 @@
-#
+# Project Euler 8
+
 from operator import mul
 
 var = "73167176531330624919225119674426574742355349194934\

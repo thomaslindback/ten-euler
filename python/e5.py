@@ -1,3 +1,5 @@
+# Project Euler 5
+
 from fractions import gcd 
 
 def lcm(a,b):
@@ -6,10 +8,5 @@ def lcm(a,b):
 def check(res, myrange):
 	return all([res%i==0 for i in myrange])
 
-ran = range(20,1,-1)
-result = ran[0]
-for i in ran:
-	result = lcm(result,i)
-	print(result, i)
-
-
+res = reduce(lambda x, y: lcm(y,x), range(1, 21))
+print res, check(res, range(1, 21))
