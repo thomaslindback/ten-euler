@@ -20,4 +20,4 @@ while numbers_of_prime != 10001:
 		res = i
 	i += 2
 
-print res, numbers_of_prime
+print 'result', res, numbers_of_prime
