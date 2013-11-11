@@ -11,5 +11,5 @@ func main() {
 			sum += i
 		}	
 	}
-	fmt.Println(sum)
+	fmt.Println("Euler 1. Result: %v", sum)
 }
