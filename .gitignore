@@ -3,3 +3,6 @@
 test/
 *~
 *bak
+go/.idea/
+go/out/
+*.iml
